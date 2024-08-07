@@ -8,6 +8,10 @@ BLEUnsignedCharCharacteristic customCharacteristic("2A56", BLERead | BLEWrite);
 unsigned char charValue = 0;
 
 void setup() {
+  setupBLE();
+}
+
+void setupBLE() {
   Serial.begin(9600);
   while (!Serial);
 
@@ -38,6 +42,10 @@ void setup() {
 }
 
 void loop() {
+  loopBLE();
+}
+
+void loopBLE() {
   // Listen for BLE central connections
   BLEDevice central = BLE.central();
 
