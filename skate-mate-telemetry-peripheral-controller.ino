@@ -22,7 +22,7 @@ void setupBLE() {
   }
 
   // Set the local name and add the service
-  BLE.setLocalName("ArduinoBLEPeripheral");
+  BLE.setLocalName("SkateMateLeftIMUPeripheral");
   BLE.setAdvertisedService(customService);
 
   // Add the characteristic to the service
